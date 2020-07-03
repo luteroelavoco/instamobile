@@ -85,7 +85,7 @@ export default class Feed extends Component {
                                 <Text style={styles.description}>{item.description}</Text>
                                 <Text style={styles.hashtags}>{item.hashtags} </Text>
 
-                                {index+1 == this.state.feed.length ? <View style={styles.last}></View> : <></>}
+                                {index+1 == this.state.feed.length && <View style={styles.last}></View>}
                             
                             </View>
                         </View>
